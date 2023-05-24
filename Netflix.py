@@ -1,7 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 fig = plt.figure()
-# get_ipython().run_line_magic('matplotlib', 'inline')
 df = pd.read_csv(r"datasets\color_data.csv",index_col=0)
 
 years = [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
@@ -66,6 +65,3 @@ plt.xlabel("Release year")
 plt.ylabel("Duration (min)")
 plt.title("Movie duration by year of release")
 plt.show()
-
-# Are we certain that movies are getting shorter?
-are_movies_getting_shorter = "maybe"
